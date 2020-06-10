@@ -1,5 +1,8 @@
 # Operating system (OS) Linux  
 
+![](https://img.shields.io/badge/Victor_Zuluaga-Holberton_School-red) ![](https://img.shields.io/badge/Shell-Linux-black) ![](https://img.shields.io/badge/bash-Linux-black)
+
+
 This section introdices a range of concepts related to Linux system programming
 
 The term operating system is commonly used with two different meaning:

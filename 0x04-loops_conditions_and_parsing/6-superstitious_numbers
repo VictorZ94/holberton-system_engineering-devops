@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# using case atatement
+
+var="bad luck from China"
+var1="bad luck from Japan"
+var2="bad luck from Italy"
+i=1
+while (( i <= 20 ))
+do
+	echo "$i"	
+	case $i in	
+	4)
+		echo "$var"
+		;;
+
+	9)
+		echo "$var1"
+		;;
+	17)
+		echo "$var2"
+		;;
+	esac
+	((i++))
+done
+

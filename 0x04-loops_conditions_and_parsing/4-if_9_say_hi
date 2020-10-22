@@ -4,9 +4,9 @@
 var="Holberton School"
 var1="Hi"
 i=0
-while [ "$i" -lt 10 ]
+while [ "$i" -le 10 ]
 do
-	if [ "$i" -eq 8 ]
+	if [ "$i" -eq 9 ]
 	then
 		echo "$var1"
 	else

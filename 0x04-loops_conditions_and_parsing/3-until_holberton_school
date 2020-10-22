@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# print 10 times Holberton School with while
+
+var="Holberton School"
+i=0
+until [ "$i" -gt 10 ]
+do
+    echo "$var"
+    ((i++))
+done

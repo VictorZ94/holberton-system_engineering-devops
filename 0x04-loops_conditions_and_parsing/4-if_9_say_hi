@@ -4,7 +4,7 @@
 var="Holberton School"
 var1="Hi"
 i=0
-for (( i = 0; i < 10; i++ ))
+while [ "$i" -lt 10 ]
 do
 	if [ "$i" -eq 8 ]
 	then
@@ -12,4 +12,5 @@ do
 	else
 		echo "$var"
 	fi
+	((i++))
 done

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # print ls and use cut
 
-for i in `ls .`
+for i in $(pwd|ls)
 do
-	echo $i | cut -d '-' -f2
+	echo "$i" | cut -d '-' -f2
 done

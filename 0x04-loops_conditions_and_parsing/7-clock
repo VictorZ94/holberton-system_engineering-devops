@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# print clock 0..12 and 1..5
+# print clock 0..12 and 1..59
 
 i=0
 while [ $i -lt 12 ]

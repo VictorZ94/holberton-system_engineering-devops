@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# infinity loop 
+
+function removefile()
+{
+	rm --force "$(/var/run/holbertonscript.pid)"
+}
+
+while :
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap "echo 'I hate the kill command'" SIGTERM
+	trap "echo 'Y U no love me?!'" SIGINT
+	trap removefile SIGQUIT SIGTERM
+done

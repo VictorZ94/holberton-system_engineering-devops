@@ -3,3 +3,4 @@
 sudo apt-get update
 sudo apt-get -y ngnix
 echo "Holberton School for the win!" > /var/www/html/index.nginx-debian.html
+sudo service start nginx

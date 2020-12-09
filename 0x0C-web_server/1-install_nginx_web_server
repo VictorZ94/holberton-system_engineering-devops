@@ -2,5 +2,5 @@
 # install Ngnix from scrash
 sudo apt-get update
 sudo apt-get -y ngnix
-echo "Holberton School" | tee -a /var/www/html/index.nginx-debian.html
+echo "Holberton School" | tee /var/www/html/index.nginx-debian.html
 sudo service start nginx

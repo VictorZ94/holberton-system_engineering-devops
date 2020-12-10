@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Bash script that configures a new Ubuntu machine and installs ngnx
+sudo apt-get update
+sudo apt-get -y install nginx
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+sed -i " /server_name _;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
+mkdir /var/www/error
+echo "Ceci n'est pas une page" > /var/www/error/404.html
+sed -i "/server_name _;/a error_page 404 /404.html;\nlocation = /404.html {\n\troot /var/www/error/;\n\tinternal;\n}" /etc/nginx/sites-available/default
+sudo service nginx restart

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#configure costum http header response in nginx
+# this also can be "20i add_header X-Served-By $HOSTNAME;" must specify the line 
+sed -i "/server_name _;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
+sudo service nginx restart

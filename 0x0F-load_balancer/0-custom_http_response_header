@@ -2,6 +2,6 @@
 #configure costum http header response in nginx
 # this also can be "20i add_header X-Served-By $HOSTNAME;" must specify the line 
 sudo apt-get update
-sudo apt-get -y install ngnix
+sudo apt-get -y install nginx
 sed -i "/server_name _;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
 sudo service nginx restart

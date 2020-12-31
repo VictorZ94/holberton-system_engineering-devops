@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Bash script todisplay information of domain and subdomain
+domain_info() {
+   A=$(dig $2.$1 | awk '/ANSWER SECTION:/{getline;print;}')
+   RECORD=$(echo $A | cut -d' ' -f 4)
+   IP=$(echo $A | cut -d' ' -f 5)
+   echo "The subdomain $2 is a $RECORD record and points to $IP"
+}
+if [ $# -lt 1 ]
+then
+    echo "Usage: 1-world_wide_web DOMAIN SUBDOMAIN(optional)"
+elif [ $# -eq 1 ]
+then
+    domain_info "$1" "www"
+    domain_info "$1" "lb-01"
+    domain_info "$1" "web-01"
+    domain_info "$1" "web-02"
+else
+    domain_info "$1" "$2"
+fi

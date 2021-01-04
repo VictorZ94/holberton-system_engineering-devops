@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#chance root user to nginx user
+pkill -f apache2
+chmod 644 /etc/nginx/nginx.conf
+sudo sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+sudo service nginx stop
+sudo -u nginx nginx
+sudo service nginx start

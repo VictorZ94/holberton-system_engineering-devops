@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #enable ufw firewall and set some rules
 sudo ufw enable
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
 sudo ufw allow 'OpenSSH'
 sudo ufw allow 'Nginx HTTPS'
 sudo ufw allow 'Nginx HTTP'

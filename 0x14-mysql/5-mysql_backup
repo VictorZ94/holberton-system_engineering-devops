@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Doing Backup support
 mysqldump -uroot -p"$1" --all-databases > backup.sql
-tar -zcvf "$(date +'%d-%m-%Y')".tar.gz backup.sql
+tar -zcvf "$(date +'%d-%m-%Y')".tar.gz "$(pwd)"backup.sql

@@ -13,8 +13,9 @@ if __name__ == "__main__":
     # get user and extrac his/her name
     response = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                             .format(sys.argv[1]))
-    get_user = response.json().values()
-    user = list(get_user)[1]
+    get_user = response.json()
+    user = get_user.get('user')
+
     # get task
     new_reponse = requests.get('https://jsonplaceholder.typicode.com/todos/\
 ?userId={}'.format(sys.argv[1]))

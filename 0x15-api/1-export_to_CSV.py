@@ -24,6 +24,6 @@ if __name__ == "__main__":
     with open('{}.csv'.format(sys.argv[1]), mode="w") as File_csv:
         Api_writer = csv.writer(File_csv, quotechar='"', quoting=csv.QUOTE_ALL)
         for item in get_task:
-            Api_writer.writerow([sys.argv[1], username,
+            Api_writer.writerow((sys.argv[1], username,
                                  item.get('completed'),
-                                 item.get('title')])
+                                 item.get('title')))

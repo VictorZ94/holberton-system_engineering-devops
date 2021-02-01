@@ -17,7 +17,7 @@ if __name__ == "__main__":
     user = list(get_user)[1]
     # get task
     new_reponse = requests.get('https://jsonplaceholder.typicode.com/todos/\
-                               ?userId={}'.format(sys.argv[1]))
+?userId={}'.format(sys.argv[1]))
     get_task = new_reponse.json()
     # for to count number of task
     for item in get_task:
@@ -30,4 +30,3 @@ if __name__ == "__main__":
     for item in get_task:
         if item.get('completed') is True:
             print("\t{}".format(item.get('title')))
-

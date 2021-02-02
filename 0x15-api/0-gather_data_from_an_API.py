@@ -14,7 +14,7 @@ if __name__ == "__main__":
     response = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                             .format(sys.argv[1]))
     get_user = response.json()
-    user = get_user.get('user')
+    user = get_user.get('name')
 
     # get task
     new_reponse = requests.get('https://jsonplaceholder.typicode.com/todos/\

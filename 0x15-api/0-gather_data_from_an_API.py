@@ -30,4 +30,4 @@ if __name__ == "__main__":
           .format(user, number_of_task_done, total_number_of_task))
     for item in get_task:
         if item.get('completed') is True:
-            print("\t{}".format(item.get('title')))
+            print("\t {}".format(item.get('title')))

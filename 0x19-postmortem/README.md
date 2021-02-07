@@ -1,7 +1,10 @@
 # Title of the incident
 Title: Connection timeout for ssh server.
+
 Name: Ing. Victor Zuluaga Ramirez.
+
 Date: Saturday, Febrary 06, 2021 3:34:pm.
+
 Last modified: Saturday, Febrary 06, 2021 3:34:pm.
 
 ## Context

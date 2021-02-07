@@ -1,19 +1,20 @@
 # Title of the incident
-Title: Connection timeout for ssh server.
 
-Name: Ing. Victor Zuluaga Ramirez.
+**Title:** Connection timeout for ssh server.
 
-Date: Saturday, Febrary 06, 2021 3:34:pm.
+**Name:** Ing. Victor Zuluaga Ramirez.
 
-Last modified: Saturday, Febrary 06, 2021 3:34:pm.
+**Date:** Saturday, Febrary 06, 2021 3:34:pm.
+
+**Last modified:** Saturday, Febrary 06, 2021 3:34:pm.
 
 ## Context
 
-On Monday 16 November 2020 (GMT-5). Working on servers, I had the responsibility of setting up, installing, and maintaining the webserver. Then, I installed Nginx web server, set it up, and installed all packages and dependencies required.
+**On Monday 16 November 2020 (GMT-5)**. Working on servers, I had the responsibility of setting up, installing, and maintaining the webserver. Then, I installed Nginx web server, set it up, and installed all packages and dependencies required.
 
 ## issue Summary
 
-On Tuesday 17 November 2020 (GMT-5) 9:00 AM start the issue detected, Newly tried login into a server. But, this was not responding. The network was unavailable for a duration of 4 hours 15minutes. Tuesday 17 November 2020 (GMT-5) 1:15 PM end. Now, I understand how important the flexibility to install new resources and scale up, is for our users, and apologize for this incident.
+**On Tuesday 17 November 2020 (GMT-5) 9:00 AM start the issue detected,** Newly tried login into a server. But, this was not responding. The network was unavailable for a duration of 4 hours 15minutes. Tuesday 17 November 2020 (GMT-5) 1:15 PM end. Now, I understand how important the flexibility to install new resources and scale up, is for our users, and apologize for this incident.
 
 When I was trying to set OpenSSH-server connection, I’m having some issues connecting.
 

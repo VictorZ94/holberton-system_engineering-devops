@@ -2,7 +2,7 @@
 
 **Title:** Connection timeout for ssh server.
 
-**Name:** Ing. Victor Zuluaga Ramirez.
+**Name:** Victor Zuluaga Ramirez.
 
 **Date:** Saturday, Febrary 06, 2021 3:34:pm.
 
